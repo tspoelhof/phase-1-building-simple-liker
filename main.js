@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
   likeGlyph.forEach((likeGlyph) => {
     likeGlyph.addEventListener("click", () => {
       mimicServerCall()
-      .then() => {
+      .then(() => {
         if(likeGlyph.textContent == FULL_HEART) {
           likeGlyph.classList.remove("activated-heart");
         } else 
          likeGlyph.textContent = EMPTY_HEART;
           likeGlyph.classList.add("activated-heart");
-        }
+      })
       })
     })
   });
